@@ -9,16 +9,22 @@ import java.util.Scanner;
 public class Main {
     private static GameLibary gameLibary = new GameLibary();
 
+
+    //fonction qui return une chaine de caracteres
     public static String inputString() {
         Scanner scanner = new Scanner(System.in);
         return scanner.nextLine();
     }
 
+
+    //fonction qui return un entier
     public static int inputInt() {
         Scanner scanner = new Scanner(System.in);
         return scanner.nextInt();
     }
 
+
+    //Construteur de type input pour ajouter les caracteristiques d'un nouveau jeu
     public static void addNewGame() {
         System.out.print("Quel est le titre du jeu que vous souhaitez ajouter ? ");
         String title = inputString();
@@ -38,6 +44,8 @@ public class Main {
         System.out.println("");
     }
 
+
+    //Méthode pour afficher le nombre total des jeux stocké dans la biblioteque
     public static void displayGameList() {
         int nbreDeJeux = gameLibary.getVideoList().size();
         if (nbreDeJeux > 0) {
@@ -50,6 +58,9 @@ public class Main {
         }
     }
 
+
+
+    //Méthode pour donner un score a chaque jeu
     public static void rateAGame() {
         System.out.println("Quel est le titre du jeu que vous voulez noter ?");
         String jeuANoter = inputString();
@@ -70,6 +81,9 @@ public class Main {
         }
     }
 
+
+
+    //Méthode pour parcourir et trier tous les jeux de la bibliotheque selon leurs score
     public static void sortGames() {
         Collections.sort(gameLibary.getVideoList(), Collections.reverseOrder());
         for (VideoGame game : gameLibary.getVideoList()) {
@@ -79,6 +93,7 @@ public class Main {
         }
     }
 
+    //Menu switch avec fonctionnalites: ajouter un nouveau jeu, afficher la liste de jeux, noter un jeu et trier un jeu.
     public static void displayMenu() {
         boolean continuer = true;
         do {
