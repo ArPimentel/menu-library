@@ -1,2 +1,2 @@
 # menu-biblioteque
-Application qui permet de répondre aux besoins des clients à l'aide de plusieurs fonctionnalitées déclenchées via un menu en invite de commande.
+Application qui répond aux besoins des clients qui travaillent dans le domaine vidéo ludique à l'aide de plusieurs fonctionnalités déclenchées via un menu d'invite de commande.
