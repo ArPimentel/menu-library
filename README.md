@@ -1,2 +1,2 @@
-# menu-biblioteque
-Application qui permette de répondre aux besoins clients avec plusieurs fonctionnalitées déclenchées via un menu en invite de commande.
+# menu-library
+An application that meets the needs of clients working in the area of entertainment video using several functions triggered by a command prompt menu.

@@ -1,13 +1,11 @@
 package com.arpimentel.menuapp;
 
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class GameLibary {
 
 
-    //    Declaration de tableau vide pour stocker toute la liste des jeux
     private List<VideoGame> videoList = new ArrayList<>();
 
 
